@@ -46,7 +46,7 @@
     color: white;
 }
 .linear-gradient-logo{
-    background: linear-gradient(to right, #ffffff, #ff007f, #ff007f, #f8a400);
+    background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
     -webkit-background-clip: text;
     color: transparent;
 }   
@@ -361,4 +361,60 @@
 .host-content h3{
     font-size: 32px;
     margin-bottom: 20px;
+}
+.icon-container {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.icon-container img {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #533C72;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+/* ------------------footer section style-------------------- */
+
+.footer-section{
+    width: 100%;
+    height: 410px;
+    color: white;
+    background-image: url(../assets/footer-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-container{
+    width: 580px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.icons-container .icon-div{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-text{
+    padding-top: 50px;
+    font-size: 20px;
+    opacity: 50%;
 }
