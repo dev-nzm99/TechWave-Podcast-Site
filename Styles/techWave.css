@@ -205,7 +205,7 @@
     opacity: 30%;
 }
 .poscast-box-style{
-    width: 65%;
+    /* width: 65%; */
     max-height: 220px;
     padding: 60px 150px 100px 150px;
 }
@@ -405,6 +405,7 @@
     color: white;
     background-image: url(../assets/footer-bg.png);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -454,7 +455,6 @@
     .hero-circle-container{
         padding: 50px;
     }
-    
     .card-container{
         /* width: 65%; */
         display: grid;
@@ -465,6 +465,20 @@
     .podcast-card h1{
         font-size: 30px;
     }
+        .poscast-box-style {
+            width: 100%;
+            max-height: 250px;
+            padding: 0px;
+            margin-top: 50px;
+        }
+    
+        #logo {
+            font-size: 33px;
+        }
+    
+        #state-line {
+            margin-top: 40px;
+        }
     .podcast-card p{
         font-size: 12px;
     }
@@ -509,6 +523,23 @@
     .featured-episodes-section{
         height: 2070px;
     }
+        .grid-container {
+            width: 80%;
+    
+        }
+    
+        .why-choose-section .heading {
+            font-size: 30px;
+        }
+    
+        .poscast-box-style h1 {
+            font-size: 36px;
+        }
+    
+        .icons-container {
+            width: 100%;
+            flex-wrap: wrap;
+        }
     #meet-the-host-heading{
     margin-top: 80px;
     font-size: 38px;
@@ -520,9 +551,43 @@
     align-items: center;
     text-align: center;
    }
- .icon-container {
+.icon-container {
     display: flex;
     justify-content: center;
     align-items: center;
    }
+  .footer-text {
+      font-size: 15px;
+  }
+
+  .responsive-size {
+      font-size: 38px !important;
+      margin: 0 auto !important;
+  }
+
+  .title {
+      font-size: 40px;
+      margin-bottom: 10px;
+  }
+
+  .hero-circle-container .hero-circle {
+      width: 350px;
+      height: 350px;
+      padding-bottom: 50px;
+      margin-left: 30px;
+  }
+
+  #inside-hero-circle-img {
+      margin-left: -235px;
+      margin-top: -39px;
+  }
+
+  #hero-circle-btn-container {
+      margin-top: -260px;
+      padding-left: 40px;
+  }
+
+  .responsive-paragraph {
+      padding: 20px;
+  }
 }
