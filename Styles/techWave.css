@@ -3,6 +3,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    /* box-sizing: border-box; */
 }
 
 /* Shared style */
@@ -53,6 +54,9 @@
 #logo{ 
   font-size: 45px; 
 }
+#hamburger-menu{
+    display: none;
+}
 
 .header-navbar ul{
     display: flex;
@@ -70,9 +74,12 @@
     width: 100%;
     height: 760px;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hide{
+   display: none !important;
 }
 
 .hero-circle-container{
@@ -82,6 +89,7 @@
    text-align: center;
 }
 .hero-circle-container .hero-circle{
+    margin-top: 40px;
     width: 400px;
     height: 400px;
     padding-bottom: 50px;
@@ -95,8 +103,8 @@
 }
 
 #inside-hero-circle-img{
-    margin-left: -255px;
-    margin-top: -55px;
+    margin-left: -260px;
+    margin-top: -50px;
 }
 
 .circle-btn{
@@ -116,8 +124,8 @@
     border-color: darkgreen; 
 }
 #hero-circle-btn-container{
-    margin-top: -380px;
-    padding-left: 30px;
+    margin-top: -330px;
+    padding-left: 40px;
 }
 
 .title{
@@ -173,6 +181,7 @@
     padding-top: 25px;
 }
 
+
 /* --------------------------------------------------- */
 
 .podcast-section{
@@ -206,10 +215,10 @@
     padding-bottom: 20px;
 }
 
-.podcast-card{
+/* .podcast-card{
     width: 240px;
     height: 90px;
-}
+} */
 .podcast-card h1{
     font-size: 48px;
     color: #00FF88;
@@ -218,10 +227,12 @@
 
 .card-container{
     width: 65%;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(1,200px) ;
+    /* justify-content: space-around;
     /* align-items: center; */
-    margin-top: 80px;
+    margin-top: 80px; 
 }
 /* ------------------------------------------ */
 
@@ -417,4 +428,40 @@
     padding-top: 50px;
     font-size: 20px;
     opacity: 50%;
+}
+
+/* ========================= */
+
+@media screen and (max-width:576px) {
+    #hide-btn{
+        display: none !important;
+    }
+    #logo{
+        margin-right: 130px;
+    }
+    #hamburger-menu{
+        display: block;
+        cursor: pointer;
+    }
+    .header-navbar ul{
+        display: none;
+    }
+    .hero-circle-container{
+        padding: 50px;
+    }
+    
+    .card-container{
+        /* width: 65%; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:repeat(2,50px);
+        gap: 50px;
+    }
+    .podcast-card h1{
+        font-size: 30px;
+    }
+    .podcast-card p{
+        font-size: 12px;
+    }
+    
 }
